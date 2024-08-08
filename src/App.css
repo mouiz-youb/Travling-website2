@@ -1,0 +1,311 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.App{
+  height:600vh ;
+  /* width: 100vw; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(30,1fr);
+  grid-template-areas: "Nav" "home" "home" "home" "home"
+  "pub" " slider-one" " slider-one" " slider-one" "explore"
+  "explore" "explore" "explore" "travel" "travel"
+  "travel" "travel" "offer" "offer" "offer"
+  "offer" "trust" "trust" "trust" "subscribe"
+  "subscribe" "subscribe" "footer" "footer" "footer";
+  gap: 20px;
+}
+/* the styling of the nav bar */
+.nav-bar{
+  grid-area: Nav;
+  border: 1px solid ;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "left left middel middel middel middel middel middel right right ";
+  gap: 20px;
+  padding: 20px 0px ;
+}
+.left-side-nav-bar{
+  grid-area: left;
+  border: 1px solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  padding: 10px;
+}
+.logo{
+  width: 30px;
+  height: 30px;
+}
+.logo-text{
+  font-size: 20px;
+  font-weight: bold;
+}
+.middel-side-nav-bar{
+  grid-area: middel;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+li{
+  list-style: none;
+  font-size:15px ;
+  cursor: pointer;
+}
+.right-side-nav-bar{
+  grid-area: right;
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+.btn-sign-up{
+  background-color: #5D50C6;
+  border-radius: 20px;
+  border: transparent;
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+}
+.btn-log-in{
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.214);
+  display: block;
+  margin: 10px;
+  border: transparent;
+  border-radius:20px ;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* the styling of the home section */
+.home{
+  grid-area: home;
+  border: 1px solid ;
+  display:grid ;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "left left left left right right right right right right";
+}
+.left-side-home{
+  grid-area: left;
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10,1fr);
+  gap: 15px;
+  grid-template-areas: "one" "one " "two" "two" "two" 
+  "two" "three" "three" "four" "four" ;
+  padding: 20px;
+  /* background-color: blue; */
+}
+.left-side-home1-content{
+  grid-area: one;
+  border: 1px solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.bag-container{
+  border: 1px solid ;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 50%;
+  height: 50%;
+  border-radius: 20px;
+  padding: 0 10px;
+  color: #F85E9F;
+  /* background-color: rgb(255, 255, 255); */
+}
+.bag-style{
+  font-size: 20px;
+}
+.bag-text{
+  font-size: 20px;
+}
+.left-side-home2-content{
+  grid-area: two;
+  border: 1px solid;
+}
+.text-home{
+  font-size: 45px;
+  font-weight: bold;
+}
+.text-home span{
+  color: #F85E9F;
+}
+.text2-home{
+  font-size: 45px;
+  font-weight: bold;
+  color: #F85E9F;
+}
+.left-side-home3-content{
+  grid-area: three;
+  border: 1px solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.37);
+}
+.left-side-home4-content{
+  grid-area: four;
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  grid-template-rows: 1fr;
+}
+.left-btn-home{
+  border: 1px solid ;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.left-btn-home button{
+  width: 70%;
+  height: 60%;
+  border: 1px solid;
+  border-radius: 20px;
+  background-color: #5D50C6;
+  color: white;
+}
+.right-btn-home{
+  /* border: 1px solid ; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.right-btn-home div{
+  width: 70%;
+  height: 60%;
+  /* border: 1px solid; */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  padding:10px;
+  background-color: transparent;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.301);
+}
+.right-btn-home div .icon-play{
+  color: #5D50C6;
+}
+.right-side-home{
+  grid-area: right;
+  border: 1px solid;
+}
+/* the styling of the pub section */
+.pub-section{
+  grid-area: pub;
+  border: 1px solid ;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+  padding: 20px;
+  grid-template-areas: "top pub pub pub pub pub pub pub pub pub";
+}
+.top-arrow{
+  grid-area: top;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+.top-arrow-img{
+  width: 50%;
+}
+.pub-logos{
+  grid-area: pub;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.img-gourpe{
+  width: 120px;
+}
+/* the styling of the slider section */
+.slider-one{
+  grid-area: slider-one;
+  border: 1px solid ;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: " left right right";
+}
+.left-slider-one{
+  grid-area: left;
+  border: 1px solid ;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-areas: "." "container" ".";
+}
+.container-services{
+  grid-area: container;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5px;
+  flex-direction: column;
+  gap: 5px;
+}
+.top-text-container-services{
+  color: #F85E9F;
+  font-weight: bold;
+}
+.bottom-text-container-services{
+  font-size: 30px;
+  font-weight: bold;
+}
+.right-slider-one{
+  grid-area: right;
+  border: 1px solid;
+}
+/* the styling of the explore section */
+.explore{
+  grid-area: explore;
+  border: 1px solid ;
+}
+/* the styling of the travel section */
+.travel-section{
+  grid-area: travel;
+  border: 1px solid ;
+}
+/* the styling of the offer section */
+.offer-section{
+  grid-area: offer;
+  border: 1px solid ;
+}
+/* the styling of the trust section */
+.trust-section{
+  grid-area: trust;
+  border: 1px solid ;
+}
+/* the styling of the subscribe section */
+.subscribe{
+  grid-area: subscribe;
+  border: 1px solid ;
+}
+/* the styling of the footer section */
+.footer{
+  grid-area: footer;
+  border: 1px solid ;
+}
