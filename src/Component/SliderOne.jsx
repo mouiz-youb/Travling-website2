@@ -1,5 +1,6 @@
 import React from 'react'
 import "../App.css"
+import SliderContent from './SliderContent'
 function SliderOne() {
   return (
     <div className='slider-one'>
@@ -10,7 +11,7 @@ function SliderOne() {
           <p className='bottom-text-container-services'>categories for you</p>
         </div>
       </div>
-      <div className='right-slider-one'></div>
+      <SliderContent/>
     </div>
   )
 }
