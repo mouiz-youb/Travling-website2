@@ -511,7 +511,22 @@ li{
   grid-area: travel;
   border: 1px solid ;
   display: grid;
-  
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows:1fr;
+  grid-template-areas: "img img img img img content  content  content  content  content" ;
+}
+.travel-section-img{
+border: 1px solid ;
+grid-area: img;
+position: relative;
+}
+.travel-section-img img{
+  width: 100%;
+  position: absolute;
+}
+.travel-section-content{
+border: 1px solid ;
+grid-area: content;
 }
 /* the styling of the offer section */
 .offer-section{
