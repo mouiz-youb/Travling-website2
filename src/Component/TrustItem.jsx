@@ -3,8 +3,8 @@ import UserImage from "../../Images/UserImage.svg"
 import { FaStar } from 'react-icons/fa'
 function TrustItem(props) {
   return (
-    <div className='Trust-item'>
-      <p className='Trust-header'>Testimonials</p>
+    <div className={props.className}>
+      <p className='Trust-header'>Testimonials {props.text}  </p>
       <p className='head-line'>Trust our clients</p>
       <div className="Trust-image">
         <img src={UserImage} alt="user image " />

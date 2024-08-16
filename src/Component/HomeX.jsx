@@ -5,6 +5,7 @@ import RightSideHome from "./RightSideHome"
 function HomeX() {
   return (
     <div className='home'>
+      <div className='circlex'></div>
       <LeftSideHome/>
       <RightSideHome/>
     </div>
